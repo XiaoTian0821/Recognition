@@ -1,0 +1,19 @@
+# Enable pretty URLs for API
+RewriteEngine On
+RewriteBase /ai-ar-object-recognition/
+
+# Protect configuration and database files from direct access.
+RewriteRule ^(?:config|database)(?:/|$) - [F,L]
+
+# Prevent directory listing
+Options -Indexes
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
