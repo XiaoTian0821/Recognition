@@ -64,14 +64,14 @@ AppConfig::boot();
             <div class="form-group">
                 <label for="geminiModel">Model</label>
                 <input type="text" id="geminiModel" name="gemini_model"
-                       placeholder="gemini-2.0-flash" value="gemini-2.0-flash">
+                       placeholder="gemini-3.6-flash" value="gemini-3.6-flash">
             </div>
 
             <div class="form-group">
                 <label for="geminiFallback">Fallback Models</label>
                 <textarea id="geminiFallback" name="gemini_fallback"
-                          placeholder="gemini-1.5-flash, gemini-1.5-pro"
-                          rows="2">gemini-1.5-flash, gemini-1.5-pro</textarea>
+                          placeholder="Optional fallback models"
+                          rows="2"></textarea>
                 <p class="field-hint">Comma-separated list of models to try if the primary fails.</p>
             </div>
 

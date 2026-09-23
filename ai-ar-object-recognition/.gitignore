@@ -1,0 +1,21 @@
+# Ignore the active config file (contains API keys)
+config/config.php
+
+# Ignore any backup configs
+config/config.php.bak
+config/config.php.old
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependencies (none required, but just in case)
+vendor/
+node_modules/
